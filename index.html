@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="./assets/Слой 2 (2) 2.svg" alt="">
+                </div>
+                <ul class="navbar__collection">
+                    <li class="navbar__item"><a href="#"><span>Trade In</span></a></li>
+                    <li class="navbar__item"><a href="#"><span>TВелосипеды</span></a></li>
+                    <li class="navbar__item"><a href="#"><span>Экипировка</span></a></li>
+                    <li class="navbar__item"><a href="#"><span>Аксессуары</span></a></li>
+                    <li class="navbar__item"><a href="#"><span>Велостанки</span></a></li>
+                </ul>
+                <div class="navbar__icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div onclick="toggleShow()" class="navbar__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p>Главная / Контакты</p>
+                <h2>Контакты</h2>
+            </div>
+        </section>
+        <section class="location" id="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.59854203195!2d69.11455762018232!3d41.282479929544316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1718347776798!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="info" id="info">
+            <div class="container">
+                <div class="info__wrapper">
+                    <div class="info__add">
+                        <b>Адрес магазина:</b>
+                        <p>Россия, Москва, ул. Доватора, дом 7/8 с1</p>
+                        <b>График работы:</b>
+                        <p>Понедельник — Воскресение с 10:00 до 20:00 часа</p>
+                        <p>БЕЗ ВЫХОДНЫХ</p>
+                        <b>Телефоны:</b>
+                        <p>+7 (495) 055-75-86</p>
+                        <p>+7 (965) 142-22-99</p>
+                        <b>E-mail:</b>
+                        <p>order@world-bike.ru — заказы</p>
+                        <p>nfo@world-bike.ru — информация</p>
+                        <p>opt@world-bike.ru — опт</p>
+                    </div>
+                    <div class="info__desc">
+                        <ul>
+                            <li><b>Юридическая информация:</b></li>
+                            <li>Наименование: </li>
+                            <li>ИНН: </li>
+                            <li>Фактический адрес: </li>
+                            <li>Юридический адрес: </li>
+                            <li>Расчетный счет: </li>
+                            <li>Банк: </li>
+                            <li>Корр.счет: </li>
+                            <li>БИК: </li>
+                        </ul>
+                        <ul class="add">
+                            <li>ИП НЕТРЕБИН ВЛАДИСЛАВ ВЯЧЕСЛАВОВИЧ</li>
+                            <li>402573939444</li>
+                            <li>317402700004683</li>
+                            <li>Москва, ул. Доватора, дом 7/8 с1</li>
+                            <li>Москва, ул. Доватора, дом 7/8 с1</li>
+                            <li>40802810800000085888</li>
+                            <li>АО «ТИНЬКОФФ БАНК»</li>
+                            <li>30101810145250000974 </li>
+                            <li>044525974</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="message" id="message">
+            <div class="container">
+                <div class="message__wrapper">
+                    <div class="msg__desc">
+                        <h2>СВЯЖИТЕСЬ С НАМИ ПО ЛЮБЫМ ВОПРОСАМ</h2>
+                        <div class="inp">
+                            <input type="text" placeholder=" Имя">
+                            <input type="email" placeholder=" E-mail">
+                            <input type="tel" placeholder=" Телефон">
+                            <input type="text" placeholder="    Компания">
+                        </div>
+                        <div class="msg">
+                            <input type="text" placeholder="    Сообщение">
+                        </div>
+                        <button>Задать вопрос</button>
+                    </div>
+                    <div class="msg__img">
+                        <img src="./assets/image 86.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
