@@ -232,40 +232,86 @@
 }
 
 
+
 {
-    // case8 
-    function month(m) {
-        switch (m) {
-            case 1:
-                return `Yanvar`
-            case 2:
-                return `Fevral`
-            case 3:
-                return `Mart`
-            case 4:
-                return `Aprel`
-            case 5:
-                return `May`
-            case 6:
-                return `Iyun`
-            case 7:
-                return `Iyul`
-            case 8:
-                return `Avgust`
-            case 9:
-                return `Sentabr`
-            case 10:
-                return `Oktabr`
-            case 11:
-                return `Noyabr`
-            case 12:
-                return `Dekabr`
-            default:
-                return `Bunday oy mavjud emas`
-        }
+    //case8 
+    function yil(year){
+                return`(year % 4 === 0 &&  year % 100 !== 0) || year % 400 === 0;`
+            }
+            function andyil(year){
+                return `yil(year) ? 366 : 365;`
+            }
+            // console.log(andyil(2024));
         
-    }
-    // console.log( month(2) );
+}
+{
+    //case9
+    function yil(year, moon) {
+                let sum;
+                switch (moon) {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:
+                        sum = 31;
+                        break;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11:
+                        sum = 30;
+                        break;
+                    case 2:
+                        `sum = isLeapyear(year) ? 29 : 28;`
+                        break;
+                    default:
+                        `sum = "bunday javob yoq";`
+                }
+                return sum
+            }
+            // console.log(yil(2023, 3));
+        
+}
+{
+    //caes10
+    function robot(commands) {
+                let sum = [0, 0];
+                let andsum = 0; 
+        
+                for (let command of commands) {
+                    switch (command) {
+                        case 's':
+                            sum[1]++;
+                            break;
+                        case 'j':
+                            sum[1]--;
+                            break;
+                        case 'q':
+                            sum[0]++;
+                            break;
+                        case 'g':
+                            sum[0]--;
+                            break;
+                        case '1':
+                            andsum = (andsum + 3) % 4;
+                            break;
+                        case '2':
+                            andsum = (andsum + 1) % 4;
+                            break;
+                        case '0':
+                            if (andsum === 0) sum[1]++;
+                            else if (andsum === 1) sum[0]++;
+                            else if (andsum === 2) sum[1]--;
+                            else if (andsum === 3) sum[0]--;
+                            break;
+                    }
+                }
+                return sum;
+            }
+            // console.log(robot(['s', 's', '2', 'q', '0']));
 }
 
 
@@ -323,10 +369,13 @@
 
 {
     // for4   
-        for (let i = 1; i <= 10; i++) {
-            console.log(`prise * i`);        
-        }
-    // console.log( chocolate( 10000 ) );
+    function son(a){
+                for(let i = 1; i <= 10; i++){
+                    // console.log(i);
+                    console.log(a * i);
+                }
+            }
+            // console.log(son(10000));
 }
 
 {
